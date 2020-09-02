@@ -105,12 +105,8 @@ end
 
 
 def play(board)
-  2.times do
-  input = gets.strip
-return "1"
   until over?(board)
-  play(board)
-  break
+  turn(board)
 end
 end
 end
