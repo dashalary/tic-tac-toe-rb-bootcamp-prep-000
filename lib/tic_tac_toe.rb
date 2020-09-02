@@ -102,6 +102,7 @@ def winner(board)
 # else draw?(board)
 #   return nil
 # end
+won(board)
 binding.pry
 end
 
