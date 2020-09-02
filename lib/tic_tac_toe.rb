@@ -98,8 +98,8 @@ def winner(board)
 #   elsif over?(board) && board[1] == "O" && board[4] == "O" && board[7] == "O"
 #   return "O"
 # else draw?(board)
-  
-
+  return nil
+end
 end
 
 
