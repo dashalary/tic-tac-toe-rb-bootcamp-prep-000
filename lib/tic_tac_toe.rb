@@ -111,6 +111,7 @@ end
 def play(board)
   input = gets.strip
 return "1"
+2.times do
   until over?(board)
   play(board)
   break
