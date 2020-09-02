@@ -109,9 +109,9 @@ end
 
 
 def play(board)
+  2.times do
   input = gets.strip
 return "1"
-2.times do
   until over?(board)
   play(board)
   break
