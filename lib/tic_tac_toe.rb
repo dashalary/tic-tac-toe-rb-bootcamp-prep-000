@@ -95,15 +95,10 @@ end
 end
 
 def winner(board)
-#   if over?(board) && board[0] == "X" && board[4] == "X" && board[8] == "X"
-#     return "X"
-#   elsif over?(board) && board[1] == "O" && board[4] == "O" && board[7] == "O"
-#   return "O"
-# else draw?(board)
-#   return nil
-# end
 combo = won?(board)
-binding.pry
+if combo 
+  return board[combo[0]]
+end
 end
 
 
@@ -112,4 +107,5 @@ def play(board)
   until over?(board)
   turn(board)
 end
+
 end
