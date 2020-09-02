@@ -1,3 +1,5 @@
+require "pry"
+
 def position_taken?(board, index)
   if board[index] == " " || board[index] == "" || board[index] == nil
     return false
@@ -98,8 +100,9 @@ def winner(board)
 #   elsif over?(board) && board[1] == "O" && board[4] == "O" && board[7] == "O"
 #   return "O"
 # else draw?(board)
-  return nil
-end
+#   return nil
+# end
+binding.pry
 end
 
 
